@@ -34,7 +34,7 @@ const CountryDetailsPage = () => {
             <h1>{country.name.common}</h1>
             <img
                 src={`https://flagpedia.net/data/flags/icon/72x54/${country.alpha2Code.toLowerCase()}.png`}
-                alt=""
+                alt="country flag"
               />
 
             <table className="table">

@@ -18,7 +18,9 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container" 
+    style={{maxHeight: "90vh", overflow: "scroll"}}>
+
       <h3>WikiCountries: Your Guide to the World</h3>
 
       <div className="list-group">
@@ -30,8 +32,8 @@ const HomePage = () => {
               className="list-group-item list-group-item-action"
             >
               <img
-                src={`https://flagpedia.net/data/flags/icon/72x54/${country.alpha2Code.toLowerCase()}.png`}
-                alt=""
+                src={`https://flagpedia.net/data/flags/icon/40x30/${country.alpha2Code.toLowerCase()}.png`}
+                alt="country flag"
               />
               <span>{country.name.common}</span>
             </Link>
